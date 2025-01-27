@@ -566,24 +566,26 @@ nav {
         width: 100%; /* Make sections stack vertically on smaller screens */
     }
 }
+
 /* Skills section */
 #skills { 
     background-color: black;
     color: white;
     text-align: center;
     min-height: 120vh;
+    padding: 50px 0; /* Add padding for better spacing */
 }
 
 /* Skills container */
 .skills-container {
-    max-width: 1000px;
+    max-width: 1200px; /* Increased max-width for larger screens */
     margin: 0 auto;
 }
 
 /* Skills heading */
 #skills h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 2rem; /* Reduced font size */
+    margin-bottom: 20px;
     color: #00BFFF;
     text-shadow: 0 0 10px #00BFFF;
     text-align: center; /* Ensure the heading is centered */
@@ -593,7 +595,8 @@ nav {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns for each row */
-    gap: 0px;
+    gap: 20px; /* Decreased gap between columns */
+    padding: 0 20px;
 }
 
 /* Each row of skills */
@@ -603,23 +606,29 @@ nav {
 
 /* Each column of skills */
 .skills-column {
-    padding: 25px;
+    padding: 20px; /* Decreased padding */
+    background-color: #222; /* Slight background color for columns */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
 /* Skill category heading */
 .skills-column h3 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.1rem; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
     color: #00BFFF;
     text-shadow: 0 0 10px #00BFFF;
     text-align: center;
+    text-transform: uppercase; /* Add uppercase to category names */
+    letter-spacing: 1px; /* Space out the letters slightly */
 }
 
 /* Skill grid for icons */
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns for each skill */
-    gap: 5px;
+    gap: 10px; /* Reduced gap */
+    justify-items: center; /* Center icons */
 }
 
 /* Skill icons */
@@ -628,21 +637,23 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
 }
 
 /* Skill icon image size */
 .skill img {
-    width: 25px;
-    height: 25px;
+    width: 30px; /* Reduced icon size */
+    height: 30px; /* Reduced icon size */
     object-fit: contain;
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Reduced margin */
 }
 
 /* Skill name */
 .skill p {
-    font-size: 0.7rem;
+    font-size: 0.7rem; /* Reduced font size */
     color: #fff;
     margin: 0;
+    text-transform: capitalize; /* Capitalize the skill names */
 }
 
 /* Hover effect for skill categories */
@@ -650,6 +661,12 @@ nav {
     background-color: #333; /* Darken background slightly on hover */
 }
 
+/* Hover effect for individual skills */
+.skill:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Hover effect for skill category heading */
 .skills-column:hover h3 {
     color: #00BFFF; /* Neon effect on hover */
     text-shadow: 0 0 15px #00BFFF, 0 0 25px #00BFFF, 0 0 35px #00BFFF;
@@ -657,26 +674,31 @@ nav {
 
 /* Responsive layout */
 @media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+        gap: 20px;
+    }
     .skills-column {
-        max-width: 0;
+        max-width: 45%; /* Ensure proper spacing */
     }
 }
 
 @media (max-width: 884px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* One column layout for smaller screens */
+        gap: 15px;
+    }
     .skills-column {
-        max-width: 40%;
+        max-width: 80%; /* Ensure columns do not take up full width */
     }
 }
 
 @media (max-width: 600px) {
     .skills-column {
-        max-width: 45%;
-    }
-
-    .skills {
-        grid-template-columns: 1fr; /* Stack skills vertically */
+        max-width: 100%; /* Ensure full width on very small screens */
     }
 }
+
 
 /* General Section */
 #projects {
