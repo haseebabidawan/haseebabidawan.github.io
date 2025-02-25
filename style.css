@@ -981,7 +981,7 @@ nav {
 /* Contact Section Styling */
 #contact {
     padding: 50px 10%;
-        background: url('D:\\GEN_AI\\Portfolio Website\\background.jpg') no-repeat center center/cover;
+    background: url('D:\\GEN_AI\\Portfolio Website\\background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     min-height: 10vh; /* Full-screen height */
