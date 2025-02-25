@@ -179,6 +179,7 @@ nav {
 
 .main-container .image {
     width: 550px; /* Increased circle size */
+    object-fit: cover;
     height: auto; /* Increased circle size */
     border-radius: 50%;
     overflow: hidden;
@@ -203,8 +204,9 @@ nav {
 }
 
 .main-container .image img {
-    width: 100%;
-    height: 100%;
+    width:100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -666,15 +668,15 @@ nav {
 
 /* Skill icon image size */
 .skill img {
-    width: 30px; /* Reduced icon size */
-    height: 30px; /* Reduced icon size */
+    width: 50%; /* Reduced icon size */
+    height: 50px; /* Reduced icon size */
     object-fit: contain;
     margin-bottom: 5px; /* Reduced margin */
 }
 
 /* Skill name */
 .skill p {
-    font-size: 0.7rem; /* Reduced font size */
+    font-size: 0.8rem; /* Reduced font size */
     color: #fff;
     margin: 0;
     text-transform: capitalize; /* Capitalize the skill names */
@@ -844,6 +846,7 @@ nav {
 .modal img {
     width: 100%;
     height: auto;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -978,7 +981,7 @@ nav {
 /* Contact Section Styling */
 #contact {
     padding: 50px 10%;
-    background-color: black;
+        background: url('D:\\GEN_AI\\Portfolio Website\\background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     min-height: 10vh; /* Full-screen height */
@@ -995,12 +998,12 @@ nav {
 /* Contact Info Styling */
 .contact-info {
     font-size: 1.2rem;
-    color: #cbd5e1;
+    color: #00BFFF;
     margin-bottom: 30px;
 }
 
 .contact-info a {
-    color: #00BFFF;
+    color: #f1f8fa;
     text-decoration: none;
 }
 
@@ -1084,7 +1087,9 @@ nav {
     .main-container .image {
         z-index: -1;
         width: 50%;
-        height: 60%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .main-container .content {

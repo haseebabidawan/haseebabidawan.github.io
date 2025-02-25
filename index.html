@@ -86,12 +86,12 @@
                 </p>
                 <h3>Key Skills</h3>
                 <ul>
-                    <li>Time-Series Forecasting (TFT, PyCaret, N-BEATS, Transformer)</li>
+                    <li>Time-Series Forecasting (TFT, PyCaret, N-BEATS, Darts, Transformer, Fb Prophet)</li>
                     <li>Generative AI Chatbot Development</li>
-                    <li>Hyperparameter Tuning with Optuna</li>
-                    <li>Database Management and Optimization (Oracle, ETL)</li>
                     <li>Retrieval-Augmented Generation (RAG) for Chatbots</li>
+                    <li>Hyperparameter Tuning with Optuna</li>
                     <li>Dashboard Visualization (Power BI, Streamlit)</li>
+                    <li>Database Management and Optimization (Oracle, ETL)</li>
                 </ul>
             </div>
         </div>
@@ -235,7 +235,7 @@
                                 <p>TensorFlow</p>
                             </div>
                             <div class="skill">
-                                <img src="Icons\Keras.png" alt="Keras">
+                                <img src="Icons\keras.png" alt="Keras">
                                 <p>Keras</p>
                             </div>
                             <div class="skill">
@@ -247,7 +247,7 @@
                                 <p>Matplotlib</p>
                             </div>
                             <div class="skill">
-                                <img src="Icons\Seaborn.png" alt="Seaborn">
+                                <img src="Icons\seaborn.png" alt="Seaborn">
                                 <p>Seaborn</p>
                             </div>
                             <div class="skill">
@@ -485,40 +485,54 @@
     </section>
     <section id="contact" data-aos="fade-up" data-aos-duration="1500">
         <div class="contact-container">
-            <h2>Contact</h2>
-    
-            <!-- Contact Info -->
-            <div class="contact-info" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                <p><strong>Email:</strong> <a href="mailto:m.haseebabidawan@gmail.com">m.haseebabidawan@gmail.com</a></p>
-                <p><strong>WhatsApp/Phone:</strong> <a href="tel:+923045662002">+92-304-5662002</a></p>
-                <p>
-                    <strong>LinkedIn:</strong> 
-                    <a href="https://www.linkedin.com/in/haseebabidawan/" target="_blank">LinkedIn Profile</a>
-                </p>
-                <p>
-                    <strong>GitHub:</strong> 
-                    <a href="https://github.com/haseebabidawan" target="_blank">GitHub Profile</a>
-                </p>
+          <h2>Contact</h2>
+      
+          <!-- Contact Info -->
+          <div class="contact-info" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <p><strong>Email:</strong> <a href="mailto:m.haseebabidawan@gmail.com">m.haseebabidawan@gmail.com</a></p>
+            <p><strong>WhatsApp/Phone:</strong> <a href="tel:+923045662002">+92-304-5662002</a></p>
+            <p>
+              <strong>LinkedIn:</strong> 
+              <a href="https://www.linkedin.com/in/haseebabidawan/" target="_blank">LinkedIn Profile</a>
+            </p>
+            <p>
+              <strong>GitHub:</strong> 
+              <a href="https://github.com/haseebabidawan" target="_blank">GitHub Profile</a>
+            </p>
+          </div>
+      
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
-    
-            <!-- Contact Form -->
-            <form action="https://formsubmit.co/m.haseebabidawan@gmail.com" method="POST" class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <!-- Using type="button" prevents the default form submission -->
+            <button type="button" id="submit-btn" class="submit-btn">Send Message</button>
+          </form>
+      
+          <!-- Success Message -->
+          <p id="form-message" style="display: none; color: green; font-weight: bold;">Message sent successfully!</p>
+      
+          <script>
+            document.getElementById("submit-btn").addEventListener("click", function() {
+              // Open the Google Form URL in a new tab.
+              window.open("https://docs.google.com/forms/d/e/1FAIpQLSfGk8MaealXK8gQ8YtKWbaWtkpOrzVxMvApCZ3mE0XU47bcoA/viewform?usp=dialog", "_blank");
+              // Display the success message on the current page.
+              document.getElementById("form-message").style.display = "block";
+            });
+          </script>
         </div>
-    </section>          
+      </section>
+      
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({offset:0});
